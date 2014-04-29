@@ -68,7 +68,7 @@ function config_interface {
 }
 
 function config_do {
-	curl -o initscript-$WHICHRESOLVER.sh https://raw.github.com/simonclausen/dnscrypt-autoinstall/master/init-scripts/initscript-$WHICHRESOLVER.sh
+	curl -o initscript-$WHICHRESOLVER.sh https://raw.githubusercontent.com/simonclausen/dnscrypt-autoinstall/master/init-scripts/initscript-$WHICHRESOLVER.sh
 	if [ $DNSCRYPTCONF == true ]; then
 		/etc/init.d/dnscrypt-proxy stop
 		update-rc.d -f dnscrypt-proxy remove
